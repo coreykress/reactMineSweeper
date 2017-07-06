@@ -1,9 +1,9 @@
 node_modules
+.idea/
 .idea/dbnavigator.xml
 .idea/jsLibraryMappings.xml
 .idea/misc.xml
 .idea/modules.xml
 .idea/reactMineSweeper.iml
 .idea/workspace.xml
-src/
 www/bundle.js
