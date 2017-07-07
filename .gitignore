@@ -7,3 +7,4 @@ node_modules
 .idea/reactMineSweeper.iml
 .idea/workspace.xml
 www/bundle.js
+src/SwitchComponent.js
