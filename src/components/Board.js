@@ -3,7 +3,7 @@ import Radium from 'radium';
 import Color from 'color';
 
 /**
- * Individual Game Tile
+ * Game Board
  */
 
 // background-color: #758AA2; background-image: -webkit-gradient(linear, left top, left bottom, from(#758AA2), to(#7089B3));
@@ -30,12 +30,9 @@ let styles = {
     }
 };
 
-class Tile extends React.Component {
+class Board extends React.Component {
     constructor(props) {
         super(props);
-        this.hasFlag = this.props.hasFlag;
-        this.value = this.props.value;
-        this.showValue = this.props.showValue;
     }
 
     render() {
@@ -46,20 +43,11 @@ class Tile extends React.Component {
             style.push(styles.showValue);
         }
         return (
-        <div className="tile" style={style}>
-            <h1>test</h1>
-            {this.hasFlag}
-            {this.value}
-            {this.showValue}
-        </div>
+            <div className="board" style={style}>
+
+            </div>
         );
     }
 }
 
-Tile.defaultProps = {
-    hasFlag: false,
-    value: '',
-    showValue: false,
-};
-
-export default Radium(Tile);
+export default Radium(Board);
